@@ -30,22 +30,14 @@ describe('home document', function() {
       });
   });
 
-  it('should have proper uber+json content-type', function(done) {
+  it('should have proper application/xml content-type', function(done) {
     request(app)
       .get('/')
       .expect(200,done)
       .expect(function(res){
-        res.headers['content-type'].should.equal('application/vnd.uber+json; charset=utf-8');
+        res.headers['content-type'].should.equal('application/xml; charset=utf-8');
       });
   });
 
-  it('response body should be a valid uber document', function(done) {
-    request(app)
-      .get('/')
-      .expect(200,done)
-      .expect(function(res){
-        res.body.should.have.properties(['uber']);
-        res.body.uber.should.have.properties(['data']);
-      });
-  });
+
 });

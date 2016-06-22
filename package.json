@@ -1,9 +1,9 @@
 {
-  "name": "nodebootstrap-based-app",
+  "name": "orlando-trailblazer-ticker",
   "private": true,
   "description": "",
   "author": "",
-  "license": "UNLICENSE",
+  "license": "MIT",
   "main": "./server.js",
   "repository": {
     "type": "git",
